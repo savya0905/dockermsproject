@@ -4,24 +4,24 @@ services:
   movies:
     image: savyadugyala/paytmmovies:latest
     ports:
-      - 91:80
+      - 81:80
     deploy:
       replicas: 3
   train:
     image: savyadugyala/paytmtrain:latest
     ports:
-      - 92:80
+      - 82:80
     deploy:
       replicas: 3
   recharge:
     image: savyadugyala/paytmrecharge:latest
     ports:
-      - 93:80
+      - 83:80
     deploy:
       replicas: 3
   dth:
     image: savyadugyala/paytmdth:latest
     ports:
-      - 94:80
+      - 84:80
     deploy:
       replicas: 3
